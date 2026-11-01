@@ -317,15 +317,19 @@ footer {
    11. RESPONSIVE DESIGN
 ===================================== */
 
-@media (max-width: 768px) {
 
+/* RESPONSIVE DESIGN */
+
+/* Tablet */
+@media (max-width: 768px) {
     header {
-        justify-content: center;
+        flex-direction: column;
         text-align: center;
         padding: 20px;
     }
 
     nav {
+        justify-content: center;
         gap: 15px;
     }
 
@@ -334,110 +338,101 @@ footer {
     }
 
     section {
-        padding: 40px 22px;
-        margin: 25px 0;
+        padding: 35px 22px;
     }
 
     #home {
-        min-height: 380px;
+        min-height: auto;
     }
 
     #home h2 {
         font-size: 32px;
     }
 
-    #home h3 {
-        font-size: 21px;
-    }
-
     section h2 {
         font-size: 27px;
     }
-
-    #skills ul {
-        justify-content: center;
-    }
 }
 
-
+/* Mobile */
 @media (max-width: 480px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    header {
+        padding: 16px 12px;
+        gap: 12px;
+    }
 
     header h1 {
         font-size: 21px;
     }
 
     nav {
-        gap: 12px;
+        gap: 10px 14px;
     }
 
     nav a {
-        font-size: 14px;
+        font-size: 13px;
+    }
+
+    main {
+        width: 94%;
+    }
+
+    section {
+        padding: 25px 17px;
+        margin: 18px 0;
+    }
+
+    #home {
+        min-height: auto;
     }
 
     #home h2 {
         font-size: 27px;
     }
 
-    section {
-        padding: 30px 18px;
+    #home h3 {
+        font-size: 19px;
     }
 
-    .button {
-        padding: 10px 16px;
-    }
-}
-/* Active navigation link */
-
-nav a.active {
-    color: #7C3AED;
-    border-bottom: 2px solid #7C3AED;
-}
-
-/* Scroll reveal animation */
-
-.reveal {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.7s ease, transform 0.7s ease;
-}
-
-.reveal.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* Back to Top button */
-
-#back-to-top {
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    padding: 12px 18px;
-    border: none;
-    border-radius: 12px;
-    background: #7C3AED;
-    color: white;
-    cursor: pointer;
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.3s ease;
-}
-
-#back-to-top.visible {
-    opacity: 1;
-    visibility: visible;
-}
-@media (max-width: 480px) {
-    header {
-        padding: 20px 12px;
+    #home p,
+    #about p {
+        font-size: 14px;
     }
 
-    nav {
-        justify-content: center;
+    section h2 {
+        font-size: 23px;
+    }
+
+    #skills ul {
         gap: 10px;
     }
 
-    nav a {
+    #skills li {
+        padding: 9px 14px;
+        font-size: 13px;
+    }
+
+    #projects article {
+        padding: 18px;
+        overflow-wrap: anywhere;
+    }
+
+    #projects article h3 {
+        font-size: 17px;
+    }
+
+    #back-to-top {
+        bottom: 15px;
+        right: 15px;
+        padding: 10px 13px;
+    }
+
+    footer {
+        padding: 16px;
         font-size: 13px;
     }
 }
