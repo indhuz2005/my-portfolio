@@ -472,3 +472,14 @@ footer {
         font-size: 13px;
     }
 }
+.home-buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+}
+
+.home-buttons .button {
+    margin: 0;
+}
